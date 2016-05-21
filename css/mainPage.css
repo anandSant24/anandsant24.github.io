@@ -1,0 +1,23 @@
+/* my new styles*/
+
+#ak-Center{
+  text-align: center;
+}
+
+header.site-header{
+	border-top: 0;
+	margin-top: 10px;
+}
+
+.ak-nav{
+	background-color: #e8e8e8;
+}
+.ak-nav-top{
+	margin-left: 50px;
+	display: inline;
+	font-size: 20px;
+}
+.ak-navbar-right{
+	float:right !important;
+	margin-right:25px
+}
