@@ -1,23 +1,171 @@
----
-layout: default
----
+<!doctype html>
+<html>                  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <title>Anand Sant</title>
+        <link type="image/x-icon" rel="icon" href="src/img/anand-icon-70x70.png">
+        <link type="text/css" rel="stylesheet" href="src/css/bootstrap3/bootstrap.css">
+        <script src="src/lib/js/jquery-1.11.3.js"></script>
+        <!--<link rel="stylesheet" href="src/css/font-awesome/font-awesome.min.css">-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link type="text/css" rel="stylesheet" href="src/css/app-min.css">
+    </head>
 
-<div class="home">
+    <body>
+        <header class="header" id="header">
+            <div class="row">
+                <div class="col-md-2 col-25"></div>
+                <div class="col-md-8">
+                  <div class="row">    
+                  <div class="name-details col-16 col-xs-5 col-md-3 col-lg-3">
+                      <h1>Anand Kumar Sant</h1>
+                      <h2>Application Developer</h2>
+                  </div>
+                  
+                  <div class="profile-details col-16 col-xs-7 col-md-3 col-lg-3">
+                      <img class="profileImage" src="src/img/linkedInnProfile1.png">
+                  </div>
+                  <div class="col-md-3 col-lg-3"></div>
+                  </div>
+                </div>
+            </div>	
 
-  <h1 class="page-heading">Posts</h1>
+            <div class="row">
+                <div>
+                    <div class="col-md-2"></div>
+                    <nav class="col-xs-12 col-md-8 nav-block hidden-xs">
+                        <div class="navContainer row">
+                            <div class="col-md-3 nav-items"><a class="col-md-2" href="Home">Home</a></div>
+                            <div class="col-md-3 nav-items"><a class="col-md-2" href="About">Profile</a></div>
+                            <div class="col-md-3 nav-items"><a class="col-md-2" href="Project">Project</a></div>
+                            <div class="col-md-3 nav-items"><a class="col-md-2" href="Contact">Contact</a></div>
+                        </row>
+                    </nav>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+    	</header>		
+  
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <main class="main details-info container-fluid text-align-justify"> 
+  		<section class="row">
+            <div class="col-md-2"></div>
+			<div class="col-md-8">
+            	<p><strong>Currently: </strong>Working at <strong><a href="https://www.chase.com/" target="_blank">JPMorgan Chase & Co.</a></strong> building utilities and reusable components and Providing Technical Leadership and guidance for design and Implementation of Application enhancement.
+				</p>
+			</div>
+  		</section>
+        <hr>
+        <section class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 previous">
+                <p><strong>Previously</strong> worked at <strong> <a href="http://www.target.com/" target="_blank">Target Inc.</a></strong> Created MVP supporting mobile, tablet platforms for Targets end User, Developed account signup/login, Managing user Summary, history, credit cards, preferences.
+                </p>
+    			</div>
+        </section>
+        <section class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <h3 class="technology-header">Technology Stack </h3>
+        </section>
+    </main>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<!--    
+    <div class="container-fluid">
+    
+        <div class="row technology-stack">
+            <h3 class="technology-header">Technology Stack </h3>
+            <img class="col-sm-4" src="src/img/js.jpg" alt="JavaScript">
+            <img class="col-sm-4" src="src/img/html.jpg" alt="JavaScript">
+            <img class="col-sm-4" src="src/img/css.jpg" alt="JavaScript">
+              <img class="col-sm-4" src="src/img/bb.jpg" alt="JavaScript">
+              <img class="col-sm-4" src="src/img/AngularJS-small.png" alt="JavaScript">
+        </div>
+    </div>-->
 
-</div>
+<div>
+  <div class='carousel-MainContainer row'>
+    <div class="col-md-2"></div>
+    <div class='col-md-8 col-xs-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          <div class="item  active">
+            <div class="row">
+              <div class="col-md-4 col-xs-4">
+                <a class="logo thumbnail" href="#"><img class="logo" alt="JavaScript logo" src="src/img/js.jpg"></a>
+              </div>          
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="HTML logo" src="src/img/html.jpg"></a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="CSS logo" src="src/img/css.jpg"></a>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="Backbone.JS" src="src/img/backbone.jpg"></a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="angular" alt="AngularJS logo" src="src/img/angular-AKS.png"></a>
+              </div>          
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="jQuery logo" src="src/img/jQuery.jpg"></a>
+              </div>        
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo requirejs" alt="requirejs logo" src="src/img/require-js.svg"></a>
+              </div>         
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="mocha logo"  src="src/img/mocha.png"></a>
+              </div>
+              <div class="col-md-4 col-xs-4">
+                <a class="thumbnail" href="#"><img class="logo" alt="chaijs" src="src/img/chai.jpg"></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+
+
+    <footer class="footer row footer-social">
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8">
+              <i  class="fa">&#xf09b;</i>
+              <i  class="fa">&#xf08c;</i>
+              <i  class="fa">&#xf2b3;</i>
+              <i  class="fa">&#xf230;</i>
+              <i  class="fa">&#xf081;</i>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 copyright">
+              <p>&#169; Copyright: Anand Sant 2017</p>
+              <p>This page is Designed and Developed by Anand Sant version - 0.1</p>
+          </div>
+       </div>
+        <!--<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>-->
+          
+  </footer>
+  
+        <script src="src/lib/js/bootstrap.min.js"></script>
+        <script src="src/js/main.js"></script>
+    </body>
+</html>
